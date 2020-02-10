@@ -16,6 +16,7 @@ import javax.annotation.Resource;
 public class HelloController {
     @Resource
     HelloService helloService;
+
     @GetMapping
     public String hello() throws InterruptedException {
         return helloService.hello();
