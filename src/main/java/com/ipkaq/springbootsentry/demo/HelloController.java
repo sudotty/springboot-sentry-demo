@@ -19,6 +19,7 @@ public class HelloController {
 
     @GetMapping
     public String hello() throws InterruptedException {
+        log.info("调用hello world");
         return helloService.hello();
     }
 }

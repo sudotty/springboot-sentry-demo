@@ -12,8 +12,8 @@ import java.util.Random;
 @Service
 public class HelloService {
     public String hello() throws InterruptedException {
-        Thread.sleep(new Random().nextInt(1000));
         Integer i = new Random().nextInt(20);
+        log.warn("hello world service被调用");
         if (i > 10) {
             throw new ComputeExcetption("计算失败");
         }
