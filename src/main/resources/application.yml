@@ -1,0 +1,7 @@
+server:
+  port: 9876
+spring:
+  application:
+    name: springboot-sentry-demo
+  jmx:
+    enabled: false
